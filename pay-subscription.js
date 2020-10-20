@@ -3,7 +3,7 @@ $('a.btn_7fa1e8474f5e9').on('click', function(e) {
 	console.log('bootpay clicked');
 	
 	BootPay.request({
-		price: 0, // 0으로 해야 한다.
+		price: 1000, // 0으로 해야 한다.
 		application_id: "5f6062604f74b40020e35b53",
 		name: '술자루 구독결제', //결제창에서 보여질 이름
 		pg: 'payapp',
