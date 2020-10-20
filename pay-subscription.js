@@ -1,19 +1,35 @@
 $('a.btn_7fa1e8474f5e9').on('click', function(e) {
 	e.preventDefault();
-	console.log('bootpay clicked');
-	
+	// console.log('bootpay clicked');
+	var url = '//sooljaru.com/dialog/join.cm';
+	$.post( url, function( data ) {
+	  var el = $( '<div></div>' );
+	  el.html(data);
+	  // console.log(el);
+	  var form = el.find('article #join_form');
+	  // console.log(form);
+	  var email = form.find('input[type="email"]').val();
+	  var name = form.find('#join_name').val();
+	  var phone = form.find('#join_callnum').val();
+	  var address = form.find('#join_addr').val();
+	  // console.log(email);
+	  // console.log(name);
+	  // console.log(phone);
+	  // console.log(address);
+	});
+
 	BootPay.request({
-		price: 1000, // 0으로 해야 한다.
+		price: 0, // 0으로 해야 한다.
 		application_id: "5f6062604f74b40020e35b53",
 		name: '술자루 구독결제', //결제창에서 보여질 이름
 		pg: 'payapp',
 		method: 'card_rebill', // 빌링키를 받기 위한 결제 수단
 		show_agree_window: 0, // 부트페이 정보 동의 창 보이기 여부
 		user_info: {
-			username: '사용자 이름',
-			email: '사용자 이메일',
-			addr: '사용자 주소',
-			phone: '010-1234-4567'
+			username: name,
+			email: email,
+			addr: address,
+			phone: phone
 		},
 		order_id: 'sooljaru_11', //고유 주문번호로, 생성하신 값을 보내주셔야 합니다.
 		params: {callback1: '그대로 콜백받을 변수 1', callback2: '그대로 콜백받을 변수 2', customvar1234: '변수명도 마음대로'},
@@ -31,4 +47,4 @@ $('a.btn_7fa1e8474f5e9').on('click', function(e) {
 		// 빌링키를 정상적으로 가져오면 해당 데이터를 불러옵니다.
 		console.log(data);
 	});
-});	
+});
