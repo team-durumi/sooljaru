@@ -2,6 +2,20 @@
 Theme Name: Sooljaru.com 
 writer: css3studio
 */
-#w20201022c4742e0911d90 .icon_type_menu a .icon_code {
-    color:#000;
+
+/*헤더*/
+.normal_logo._front_img{width:51px}
+
+/*슬라이더*/
+.doz_sys .paging_type_dot .owl-dots .owl-dot span{
+    width:5px !important;
+    height:5px !important;
+    border:none;
+    background-color:#fff;
+    display:inline-block;
+    vertical-align:middle;
+}
+.doz_sys .paging_type_dot .owl-dots .owl-dot.active span{
+    width:8px !important;
+    height:8px !important;
 }
