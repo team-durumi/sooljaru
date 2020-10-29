@@ -13,10 +13,12 @@ $('a.btn_7fa1e8474f5e9').on('click', function(e) {
     var name = form.find('#join_name').val();
     var phone = form.find('#join_callnum').val();
     var address = form.find('#join_addr').val();
+    var idx = form.find('input[name="idx"]').val();
     // console.log(email);
     // console.log(name);
     // console.log(phone);
     // console.log(address);
+    // console.log(idx);
     BootPay.request({
       price: 0, // 0으로 해야 한다.
       application_id: "5f6062604f74b40020e35b53",
@@ -62,18 +64,18 @@ $('a.btn_7fa1e8474f5e9').on('click', function(e) {
           "phone": phone,
           "order_id": order_id,
           "billing_key": billing_key,
-          "bootpay_c_at": c_at
+          "bootpay_c_at": c_at,
+          "imweb_idx": idx
         }
       }
-      console.log(post_data);
+      // console.log(post_data);
       $.post(endpoint, post_data, function(data) {
         // console.log(data);
-        var response_data = JSON.parse(data);
-        // console.log(response_data);
-        if (response_data.is_success === true) {
+        if (data.is_success === true) {
           console.log('빌링키 저장 성공');
         } else {
           console.log('빌링키 저장 실패');
+          // 부트페이 가서 빌링키 삭제?
         }
       });
     });
