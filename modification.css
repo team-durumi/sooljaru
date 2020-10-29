@@ -82,6 +82,9 @@ writer: css3studio
 #w20201026acca4a7eeb767 ._img_box{
     text-align:left
 }
+#text_w20201028a67f529a43e0b .text-table p{
+    word-break:keep-all
+}
 /*우리술 구독 서비스*/
 #w20201028f198f4f5855f8 .text-table{position:relative;text-align:center}
 #w20201028f198f4f5855f8 .text-table:after{content:"";display:inline-block;width:1px;height:50px;border-left:1px solid #2E2F33}
