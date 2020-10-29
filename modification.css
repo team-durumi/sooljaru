@@ -7,24 +7,18 @@ writer: css3studio
 .normal_logo._front_img{width:51px}
 
 /*푸터*/
-.footer-section {
-    background-color:transparent;
-    color: #5C5B5B;
-    font-size: 12px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+.footer-section .foot-custom{position:relative}
+.footer-section .foot-sociallink{display:none}
 
-.footer-section .inside{
-    border-top:1px solid #E5E5E5;
-    padding: 0;
-}
 .footer-section .inside .custom-text p{
+    text-align:left;
     line-height:2
 }
-.footer-section .inside .custom-text p:first-of-type{
-    margin-bottom:8px
-}
+
+.footer-section .custom-text-info .logo{position:absolute;right:0;top:30%}
+.footer-section .custom-text-info .logo img{width:99px}
+.footer-section .foot-foot-nav{text-align:left}
+.footer-section .nav.nav-stacked.footer-all-nav li a{padding-left:0;margin-right:10px}
 
 /*슬라이더*/
 .doz_sys .paging_type_dot .owl-dots .owl-dot span{
@@ -38,4 +32,24 @@ writer: css3studio
 .doz_sys .paging_type_dot .owl-dots .owl-dot.active span{
     width:8px !important;
     height:8px !important;
+}
+.new_header_overlay #s20201026d5215d829e54d.section_first .visual_section .header-content,
+.page_ready #s20201026d5215d829e54d .visual_section {
+    height:calc(100vh - 91px);
+}
+/*모바일 슬라이더*/
+#s202010283bc252379577f.mobile_section .visual_section .header-content, .new_header_overlay #s202010283bc252379577f.mobile_section .visual_section .header-content.m_ratio {
+    height:calc(100vh - 70px);
+    max-height: none;
+    display: block;
+}
+
+
+@media screen and (max-width:991px) {
+    .footer-section .custom-text-info .logo{top:0}
+    .footer-section .custom-text-info .logo img{width:75px}
+
+    .visual_section .owl-dots{
+        bottom:20px;
+    }
 }
