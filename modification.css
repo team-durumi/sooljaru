@@ -97,4 +97,16 @@ writer: css3studio
     .visual_section .owl-dots{
         bottom:20px;
     }
+    /**/
+    #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:20px !important}
+    /*editors choice*/
+    #text_w20201028fcda7a4e8143f .text-table h5{font-size:20px}
+    /*배송안내*/
+    #text_w20201029ec00e39ae82c4{text-align:center}
+    #text_w20201029ec00e39ae82c4 .text-table p span{font-size:20px !important}
+    #text_w20201029e85b7b8b2c5a4 .text-table{padding:0 50px}
+    #text_w20201029e85b7b8b2c5a4 .text-table p{text-align:center !important}
+    
+    
+    
 }
