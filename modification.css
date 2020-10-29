@@ -3,6 +3,13 @@ Theme Name: Sooljaru.com
 writer: css3studio
 */
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*헤더*/
 .normal_logo._front_img{width:51px}
 
@@ -44,6 +51,14 @@ writer: css3studio
     display: block;
 }
 
+/*Sommelier’s choice*/
+#w20201026acca4a7eeb767 ._img_box{
+    text-align:left
+}
+/*우리술 구독 서비스*/
+#w20201028f198f4f5855f8 .text-table{position:relative;text-align:center}
+#w20201028f198f4f5855f8 .text-table:after{content:"";display:inline-block;width:1px;height:50px;border-left:1px solid #2E2F33}
+#w20201028f198f4f5855f8 .text-table h5{margin-bottom:20px}
 
 @media screen and (max-width:991px) {
     .footer-section .custom-text-info .logo{top:0}
