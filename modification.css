@@ -19,7 +19,8 @@ writer: css3studio
 
 .footer-section .inside .custom-text p{
     text-align:left;
-    line-height:2
+    line-height:2;
+    font-family:'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
 }
 
 .footer-section .custom-text-info .logo{position:absolute;right:0;top:30%}
@@ -78,7 +79,11 @@ writer: css3studio
     bottom:-8px;
     left:0
 }
-/*Sommelier’s choice*/
+/*editors choice*/
+#text_w20201028fcda7a4e8143f .text-table h5{
+    font-family:'Gotham','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight:300;
+}
 #w20201026acca4a7eeb767 ._img_box{
     text-align:left
 }
@@ -91,22 +96,27 @@ writer: css3studio
 #w20201028f198f4f5855f8 .text-table h5{margin-bottom:20px}
 
 @media screen and (max-width:991px) {
-    .footer-section .custom-text-info .logo{top:0}
-    .footer-section .custom-text-info .logo img{width:75px}
+    .footer-section .foot-custom{padding-bottom:50px}
+    .footer-section .custom-text-info .logo{top:initial;right:initial;bottom:0;left:50%;margin-left:-29px}
+    .footer-section .custom-text-info .logo img{width:58px}
 
     .visual_section .owl-dots{
         bottom:20px;
     }
     /**/
-    #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:20px !important}
+    #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:24px !important}
     /*editors choice*/
-    #text_w20201028fcda7a4e8143f .text-table h5{font-size:20px}
+    #text_w20201028fcda7a4e8143f .text-table h5{font-size:24px}
+    #w20201026acca4a7eeb767 ._img_box{margin:0 -15px;height:auto !important}
+    #w20201026acca4a7eeb767 ._img_box img{width:100% !important;height:auto !important}
+    .pc_section #padding_w20201028d40e503c3555c{height:30px !important}
+    .pc_section #padding_w2020102681dccada4ae8c{height:25px !important}
+    .pc_section #padding_w2020102803c4f6a119bdf{height:25px !important}
     /*배송안내*/
-    #text_w20201029ec00e39ae82c4{text-align:center}
-    #text_w20201029ec00e39ae82c4 .text-table p span{font-size:20px !important}
-    #text_w20201029e85b7b8b2c5a4 .text-table{padding:0 50px}
-    #text_w20201029e85b7b8b2c5a4 .text-table p{text-align:center !important}
-    
-    
-    
+    #text_w20201029ec00e39ae82c4 .text-table p span{font-size:24px !important}
+    .pc_section #padding_w20201029e00495d75cfde{height:60px !important}
+    .pc_section #padding_w202010291f77f97ae4003{height:30px !important}
+    .pc_section #padding_w20201029f66f6b532613c{height:25px !important}
+    /*술자루 구독*/
+    #padding_w20201028b5e83da25198b{height:35px !important}
 }
