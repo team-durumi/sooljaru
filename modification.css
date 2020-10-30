@@ -98,7 +98,7 @@ writer: css3studio
 #w20201028f198f4f5855f8 .text-table h5{margin-bottom:20px}
 
 /*구독폼*/
-.cf01 label{display:block;border:1px solid #F9C168;padding:15px 48px 15px 54px;border-radius:12px;width:340px;margin-bottom:20px;position:relative}
+.cf01 label{display:block;border:1px solid #F9C168;padding:15px 48px 15px 54px;border-radius:12px;width:340px;margin-bottom:20px;position:relative;cursor:pointer}
 .cf01 label strong{
     float:left;
     font-weight:500;
