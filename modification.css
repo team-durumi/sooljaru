@@ -12,6 +12,8 @@ writer: css3studio
 
 /*헤더*/
 .normal_logo._front_img{width:51px}
+._body_menu_m202010269cc03b924f6fd header .inline-section-wrap{border:none !important}
+._body_menu_m202010269cc03b924f6fd header .inline-col-group-right .navbar-nav{display:none}
 
 /*푸터*/
 .footer-section .foot-custom{position:relative}
