@@ -1,4 +1,8 @@
 /*
 sooljaru.com 접근파일
 */
-console.log("test");
+$(document).ready(function() {
+
+    $( ".cf01 input" ).checkboxradio();
+//    $( ".cf01" ).controlgroup();
+});
