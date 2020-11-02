@@ -98,6 +98,7 @@ writer: css3studio
 #w20201028f198f4f5855f8 .text-table h5{margin-bottom:20px}
 
 /*구독폼*/
+.cf01{margin-left:50px}
 .cf01 label{display:block;border:1px solid #F9C168;padding:15px 48px 15px 54px;border-radius:12px;width:340px;margin-bottom:20px;position:relative;cursor:pointer}
 .cf01 label strong{
     float:left;
@@ -154,4 +155,6 @@ writer: css3studio
     .pc_section #padding_w20201029f66f6b532613c{height:25px !important}
     /*술자루 구독*/
     #padding_w20201028b5e83da25198b{height:35px !important}
+    /*구독폼*/
+    .cf01{margin-left:0}
 }
