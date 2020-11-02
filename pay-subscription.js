@@ -56,7 +56,7 @@ $('a.btn_7fa1e8474f5e9').on('click', function(e) {
         }).error(function (data) {
           //결제 진행시 에러가 발생하면 수행됩니다.
           console.log('error');
-          alert('결제 도중 에러가 발생했습니다. 다시 시도해주세요.');
+          alert('구독신청중 에러가 발생했습니다. 다시 시도해주세요.');
           // console.log(data);
         }).cancel(function (data) {
           //결제가 취소되면 수행됩니다.
@@ -90,11 +90,12 @@ $('a.btn_7fa1e8474f5e9').on('click', function(e) {
             // console.log(data);
             if (data.is_success === true) {
               console.log('빌링키 저장 성공');
+              alert('구독결제를 위한 카드정보가 저장되었습니다.');
               // console.log(data);
             } else {
               console.log('빌링키 저장 실패');
-              // console.log(data);
-              // 부트페이 가서 빌링키 삭제?
+              alert('구독신청중 에러가 발생했습니다. 다시 시도해주세요.');
+              console.log(data);
             }
           });
         });
