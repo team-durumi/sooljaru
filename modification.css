@@ -99,18 +99,24 @@ writer: css3studio
 
 /*구독폼*/
 .cf01{margin-left:50px}
-.cf01 label{display:block;border:1px solid #F9C168;padding:15px 48px 15px 54px;border-radius:12px;width:340px;margin-bottom:20px;position:relative;cursor:pointer}
+.cf01 label{display:block;border:1px solid #E5E5EA;padding:15px 15px 15px 54px;border-radius:12px;width:340px;margin-bottom:20px;font-size:15px;position:relative;cursor:pointer}
 .cf01 label strong{
     float:left;
-    font-weight:500;
+    font-weight:600;
     font-family:'Nanum Gothic', 'Noto Sans','sans-serif';
     color:#000;
 }
 .cf01 label b{
     float:right;
-    font-weight:500;
+    font-weight:600;
     font-family:'Nanum Gothic', 'Noto Sans','sans-serif';
     color:#000;
+}
+.cf01 label b i{
+    font-style:normal;
+    color:#D1D1D6;
+    text-decoration:line-through;
+    margin-right:10px
 }
 .cf01 label span{
     clear:both;
@@ -120,8 +126,13 @@ writer: css3studio
     color:#2E2F33;
 }
 .cf01 input[type=radio]{visibility:hidden;position:absolute}
-.cf01 input[type=radio] + label .fa{display:none;position:absolute;left:20px;top:50%;margin-top:-5px;color:#F9C168}
-.cf01 input[type=radio]:checked + label .fa{display:block}
+.cf01 input[type=radio] + label .fa{position:absolute;left:20px;top:50%;margin-top:-5px;color:#E5E5EA}
+.cf01 input[type=radio] + label .fa.fa-circle{display:block}
+.cf01 input[type=radio] + label .fa.fa-dot-circle-o{display:none}
+.cf01 input[type=radio]:checked + label{border-color:#F9C168}
+.cf01 input[type=radio]:checked + label .fa{color:#F9C168}
+.cf01 input[type=radio]:checked + label .fa.fa-circle{display:none}
+.cf01 input[type=radio]:checked + label .fa.fa-dot-circle-o{display:block}
 
 /*마이페이지*/
 .mypage .left-menu > ul > li:nth-child(1){display:none}
