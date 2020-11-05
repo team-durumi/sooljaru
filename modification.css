@@ -9,6 +9,12 @@ writer: css3studio
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*헤더*/
 .normal_logo._front_img{width:51px}
@@ -103,7 +109,7 @@ writer: css3studio
 }
 #w202011059f30d47f4519c .text-table p:first-of-type span strong{
     font-weight:600;
-    font-family:'Nanum Gothic', 'Noto Sans','sans-serif';
+    font-family:'MapoGoldenPier','Nanum Gothic', 'Noto Sans','sans-serif';
     letter-spacing:10px
 }
 #text_w20201028fcda7a4e8143f .text-table h5{
@@ -126,8 +132,8 @@ writer: css3studio
 }
 #text_w202011053a4a7b0186325 .text-table p:first-of-type span strong{
     font-weight:600;
-    font-family:'Nanum Gothic', 'Noto Sans','sans-serif';
-    letter-spacing:10px
+    font-family:'MapoGoldenPier','Nanum Gothic', 'Noto Sans','sans-serif';
+    letter-spacing:10px;
 }
 #s20201105f81e119f8804d .text-table h5{
     font-family:'Gotham','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
