@@ -13,17 +13,22 @@ writer: css3studio
 /*헤더*/
 .normal_logo._front_img{width:51px}
 ._body_menu_m202010269cc03b924f6fd header .inline-section-wrap{border:none !important}
-._body_menu_m202010269cc03b924f6fd header .inline-col-group-right .login_btn_item{display:none}
+._body_menu_m202010269cc03b924f6fd header .inline-col-group-right > .inline-col{display:none}
 
 /*푸터*/
 .footer-section .foot-custom{position:relative}
-.footer-section .foot-sociallink{display:none}
+.footer-section .foot-sociallink{float:left;margin-bottom:10px}
+.footer-section .foot-sociallink .btn-group .btn{padding:0}
+.footer-section .foot-sociallink .btn-group .btn i{font-size:30px;color:#5C5B5B;}
+.footer-section .foot-custom{clear:left}
 
 .footer-section .inside .custom-text p{
     text-align:left;
+    color:#5C5B5B;
     line-height:2;
     font-family:'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
 }
+.footer-section .inside .custom-text p:first-of-type{margin-bottom:10px}
 
 .footer-section .custom-text-info .logo{position:absolute;right:0;top:30%}
 .footer-section .custom-text-info .logo img{width:99px}
@@ -56,6 +61,11 @@ writer: css3studio
     display: block;
 }
 */
+
+/*메인>사용기*/
+#s202010282fbce4a2a5eec .doz_row .col-dz-4 .doz_row:nth-child(4){
+    font-family:'Nanum Gothic', 'Noto Sans','sans-serif';
+}
 /*일상에 우리술을 더하다*/
 #text_w20201026655da43983b7b{
     text-align:center;
@@ -84,7 +94,18 @@ writer: css3studio
     bottom:-8px;
     left:0
 }
-/*editors choice*/
+/*SOMMELIER’S NOTE*/
+#w202011059f30d47f4519c{
+    width:390px;
+}
+#w202011059f30d47f4519c .text-table p:first-of-type{
+    margin-bottom:15px
+}
+#w202011059f30d47f4519c .text-table p:first-of-type span strong{
+    font-weight:600;
+    font-family:'Nanum Gothic', 'Noto Sans','sans-serif';
+    letter-spacing:10px
+}
 #text_w20201028fcda7a4e8143f .text-table h5{
     font-family:'Gotham','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
     font-weight:300;
@@ -145,6 +166,8 @@ writer: css3studio
 #order_total_price{display:none}
 .shop-content.mypage .head .my-theme .coupon-view{display:none}
 
+
+/*mobile*/
 @media screen and (max-width:991px) {
     .footer-section .foot-custom{padding-bottom:50px}
     .footer-section .custom-text-info .logo{top:initial;right:initial;bottom:0;left:50%;margin-left:-29px}
@@ -153,8 +176,8 @@ writer: css3studio
     .visual_section .owl-dots{
         bottom:20px;
     }
-    /**/
-    #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:24px !important}
+    /*메인>우리술구독서비스?*/
+    #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:18px !important}
     /*editors choice*/
     #text_w20201028fcda7a4e8143f .text-table h5{font-size:24px}
     #w20201026acca4a7eeb767 ._img_box{margin:0 -15px;height:auto !important}
