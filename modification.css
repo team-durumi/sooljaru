@@ -215,6 +215,18 @@ writer: css3studio
         padding-left: 30px;
         padding-right: 30px;
     } 
+    
+    #w20201102a82317958c7d5 .inline_widget .login_btn_item:first-of-type a.btn_text:before{
+        content: "\f007";
+        font-family: 'Font Awesome 5 Free';
+        font-size:18px;
+        position:relative;
+        top:2px;
+        margin-right:5px;
+    }
+    #w20201102a82317958c7d5 .inline_widget .login_btn_item:first-of-type a.btn_text span{
+        display:none;
+    }
 
     .footer-section .foot-custom{padding-bottom:50px}
     .footer-section .custom-text-info .logo{top:initial;right:initial;bottom:0;left:50%;margin-left:-29px}
