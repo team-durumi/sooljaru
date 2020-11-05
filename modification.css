@@ -182,9 +182,13 @@ writer: css3studio
         bottom:20px;
     }
     /*메인>우리술구독서비스?*/
+
+    #s202010285a362a69c686b.side_basic main .inside{
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
     #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:18px !important}
-    #text_w202010282da7491922f2e .text-table{text-align:center}
-    #text_w202010282da7491922f2e .text-table p{display:inline}
+    #w202010282da7491922f2e .text-table p{letter-spacing:-0.5px}
     /*SOMMELIER’S NOTE*/
     #w202011059f30d47f4519c{
         width:auto;
