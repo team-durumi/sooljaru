@@ -43,16 +43,19 @@ writer: css3studio
     width:8px !important;
     height:8px !important;
 }
+/*
 .new_header_overlay #s20201026d5215d829e54d.section_first .visual_section .header-content,
 .page_ready #s20201026d5215d829e54d .visual_section {
     height:calc(100vh - 91px);
-}
+}*/
 /*모바일 슬라이더*/
+/*
 #s202010283bc252379577f.mobile_section .visual_section .header-content, .new_header_overlay #s202010283bc252379577f.mobile_section .visual_section .header-content.m_ratio {
     height:calc(100vh - 70px);
     max-height: none;
     display: block;
 }
+*/
 /*일상에 우리술을 더하다*/
 #text_w20201026655da43983b7b{
     text-align:center;
