@@ -94,7 +94,7 @@ writer: css3studio
     bottom:-8px;
     left:0
 }
-/*SOMMELIER’S NOTE*/
+/*메인>SOMMELIER’S NOTE*/
 #w202011059f30d47f4519c{
     width:390px;
 }
@@ -116,14 +116,38 @@ writer: css3studio
 #text_w20201028a67f529a43e0b .text-table p{
     word-break:keep-all
 }
+
+/*구독>SOMMELIER’S NOTE*/
+#text_w202011053a4a7b0186325{
+    width:390px;
+}
+#text_w202011053a4a7b0186325 .text-table p:first-of-type{
+    margin-bottom:15px
+}
+#text_w202011053a4a7b0186325 .text-table p:first-of-type span strong{
+    font-weight:600;
+    font-family:'Nanum Gothic', 'Noto Sans','sans-serif';
+    letter-spacing:10px
+}
+#s20201105f81e119f8804d .text-table h5{
+    font-family:'Gotham','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+    font-weight:300;
+}
+#s20201105f81e119f8804d ._img_box{
+    text-align:left
+}
+#s20201105f81e119f8804d .text-table p{
+    word-break:keep-all
+}
+
 /*우리술 구독 서비스*/
 #w20201028f198f4f5855f8 .text-table{position:relative;text-align:center}
 #w20201028f198f4f5855f8 .text-table:after{content:"";display:inline-block;width:1px;height:50px;border-left:1px solid #2E2F33}
 #w20201028f198f4f5855f8 .text-table h5{margin-bottom:20px}
 
 /*구독폼*/
-.cf01{margin-left:50px}
-.cf01 label{display:block;border:1px solid #E5E5EA;padding:15px 15px 15px 54px;border-radius:12px;width:340px;margin-bottom:20px;font-size:15px;position:relative;cursor:pointer}
+.cf01{margin-left:130px}
+.cf01 label{display:block;border:1px solid #E5E5EA;padding:15px 15px 15px 15px;border-radius:12px;margin-bottom:20px;font-size:15px;position:relative;cursor:pointer}
 .cf01 label strong{
     float:left;
     font-weight:600;
@@ -149,6 +173,7 @@ writer: css3studio
     font-weight:300;
     color:#2E2F33;
 }
+/* 이전코드
 .cf01 input[type=radio]{visibility:hidden;position:absolute}
 .cf01 input[type=radio] + label .fa{position:absolute;left:20px;top:50%;margin-top:-5px;color:#E5E5EA}
 .cf01 input[type=radio] + label .fa.fa-circle{display:block}
@@ -157,6 +182,11 @@ writer: css3studio
 .cf01 input[type=radio]:checked + label .fa{color:#F9C168}
 .cf01 input[type=radio]:checked + label .fa.fa-circle{display:none}
 .cf01 input[type=radio]:checked + label .fa.fa-dot-circle-o{display:block}
+*/
+.cf01 input[type=radio]{visibility:hidden;position:absolute}
+.cf01 input[type=radio]:checked + label{border-color:#F9C168}
+.cf01 label .fa{display:none}
+.cf01 .infoText{text-align:center;width:240px;margin:0 auto;font-family:'Nanum Gothic', 'Noto Sans','sans-serif';}
 
 /*마이페이지*/
 .mypage .left-menu > ul > li:nth-child(1){display:none}
@@ -165,7 +195,12 @@ writer: css3studio
 .mypage .left-menu > ul > li:nth-child(4){display:none}
 #order_total_price{display:none}
 .shop-content.mypage .head .my-theme .coupon-view{display:none}
-
+/*구독페이지 혜택*/
+.tc01{list-style-type:none;padding:0}
+.tc01 li{margin-bottom:18px}
+.tc01 li dl{margin-bottom:0}
+.tc01 li dl dt{display:inline-block;background-color:#B65043;color:#fff;font-size:12px;height:30px;line-height:30px;padding:0 10px;border-radius:15px;font-weight:400;margin-bottom:5px}
+.tc01 li dl dd em{color:#B65043}
 
 /*mobile*/
 @media screen and (max-width:991px) {
@@ -189,7 +224,7 @@ writer: css3studio
     } 
     #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:18px !important}
     #w202010282da7491922f2e .text-table p{letter-spacing:-0.5px}
-    /*SOMMELIER’S NOTE*/
+    /*메인>SOMMELIER’S NOTE*/
     #w202011059f30d47f4519c{
         width:auto;
     }
@@ -212,7 +247,24 @@ writer: css3studio
     .pc_section #padding_w2020102803c4f6a119bdf{height:25px !important}
 
     #w20201028a67f529a43e0b p br{display:none}
+
+    /*구독페이지>SOMMELIER’S NOTE*/
+    #text_w202011053a4a7b0186325{
+        width:auto;
+    }
+    #text_w202011053a4a7b0186325 .text-table p:first-of-type span strong{
+        font-size:34px;
+        letter-spacing:5px
+    }
+
+    #w20201105a20e9f686afc6 ._img_box{margin:0 -30px;height:auto !important}
+    #w20201105a20e9f686afc6 ._img_box img{width:100% !important;height:auto !important}
+    .pc_section #padding_w20201105615a57e599b8a{height:30px !important}
+    .pc_section #padding_w20201028f4ea9ef675650{height:30px !important}
+    .pc_section #padding_w202010289cfabcc8c54b4{height:60px !important}
     
+    #text_w202011053d90e08040334 p br{display:none}
+
     
     /*11월 SOOLJARU*/
     #w2020110295da71f84c635 ._img_box{margin:0 -30px;height:auto !important}
