@@ -183,6 +183,8 @@ writer: css3studio
     }
     /*메인>우리술구독서비스?*/
     #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:18px !important}
+    #text_w202010282da7491922f2e .text-table{text-align:center}
+    #text_w202010282da7491922f2e .text-table p{display:inline}
     /*SOMMELIER’S NOTE*/
     #w202011059f30d47f4519c{
         width:auto;
@@ -204,6 +206,10 @@ writer: css3studio
     .pc_section #padding_w20201028d40e503c3555c{height:30px !important}
     .pc_section #padding_w2020102681dccada4ae8c{height:25px !important}
     .pc_section #padding_w2020102803c4f6a119bdf{height:25px !important}
+
+    #w20201028a67f529a43e0b p br{display:none}
+    
+    
     /*11월 SOOLJARU*/
     #w2020110295da71f84c635 ._img_box{margin:0 -30px;height:auto !important}
     #w2020110295da71f84c635 ._img_box img{width:100% !important;height:auto !important}
