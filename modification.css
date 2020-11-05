@@ -169,6 +169,11 @@ writer: css3studio
 
 /*mobile*/
 @media screen and (max-width:991px) {
+   .doz_sys .inside {
+        padding-left: 30px;
+        padding-right: 30px;
+    } 
+
     .footer-section .foot-custom{padding-bottom:50px}
     .footer-section .custom-text-info .logo{top:initial;right:initial;bottom:0;left:50%;margin-left:-29px}
     .footer-section .custom-text-info .logo img{width:58px}
@@ -178,13 +183,36 @@ writer: css3studio
     }
     /*메인>우리술구독서비스?*/
     #text_w20201028f198f4f5855f8 .text-table h5 span{font-size:18px !important}
-    /*editors choice*/
+    /*SOMMELIER’S NOTE*/
+    #w202011059f30d47f4519c{
+        width:auto;
+    }
+    #w202011059f30d47f4519c .text-table p:first-of-type{
+        margin-bottom:15px
+    }
+    #w202011059f30d47f4519c .text-table p:first-of-type span strong{
+        font-size:34px;
+        letter-spacing:5px
+    }
+    #text_w20201028fcda7a4e8143f .text-table h5{
+        font-family:'Gotham','Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';
+        font-weight:300;
+    }
     #text_w20201028fcda7a4e8143f .text-table h5{font-size:24px}
-    #w20201026acca4a7eeb767 ._img_box{margin:0 -15px;height:auto !important}
+    #w20201026acca4a7eeb767 ._img_box{margin:0 -30px;height:auto !important}
     #w20201026acca4a7eeb767 ._img_box img{width:100% !important;height:auto !important}
     .pc_section #padding_w20201028d40e503c3555c{height:30px !important}
     .pc_section #padding_w2020102681dccada4ae8c{height:25px !important}
     .pc_section #padding_w2020102803c4f6a119bdf{height:25px !important}
+    /*11월 SOOLJARU*/
+    #w2020110295da71f84c635 ._img_box{margin:0 -30px;height:auto !important}
+    #w2020110295da71f84c635 ._img_box img{width:100% !important;height:auto !important}
+    /*배송안내>달력이미지*/
+    #w20201029585dcdd27d315 ._img_box{margin:0 -15px;height:auto !important}
+    #w20201029585dcdd27d315 ._img_box img{width:100% !important;height:auto !important}
+
+   
+    
     /*배송안내*/
     #text_w20201029ec00e39ae82c4 .text-table p span{font-size:24px !important}
     .pc_section #padding_w20201029e00495d75cfde{height:60px !important}
