@@ -1,5 +1,14 @@
 $('a.btn_7fa1e8474f5e9').on('click', function(e) {
   e.preventDefault();
+  pay_subscription();
+});
+
+$('#w202010307ecd272f04c20 .cf01 label[for="sub_box01_01"]').on('click', function(e) {
+  e.preventDefault();
+  pay_subscription();
+});
+
+var pay_subscription = function() {
   // console.log('bootpay clicked');
   // var endpoint_hostname = "//5c1cb0852922.ngrok.io";
   var endpoint_hostname = "//api.sooljaru.com";
@@ -102,4 +111,4 @@ $('a.btn_7fa1e8474f5e9').on('click', function(e) {
       }
     });
   });
-});
+}
