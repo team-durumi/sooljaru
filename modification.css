@@ -200,6 +200,7 @@ writer: css3studio
 .mypage .left-menu > ul > li:nth-child(2){display:none}
 .mypage .left-menu > ul > li:nth-child(3){display:none}
 .mypage .left-menu > ul > li:nth-child(4){display:none}
+.mypage .left-menu > ul > li:nth-child(7){display:none}
 #order_total_price{display:none}
 .shop-content.mypage .head .my-theme .coupon-view{display:none}
 /*구독페이지 혜택*/
@@ -304,4 +305,12 @@ writer: css3studio
     #padding_w20201028b5e83da25198b{height:35px !important}
     /*구독폼*/
     .cf01{margin-left:0}
+    
+    /*마이페이지*/
+    .mypage .left-menu > ul li:nth-child(1){display:none}
+    .mypage .left-menu > ul li:nth-child(2){display:none}
+    .mypage .left-menu > ul li:nth-child(3){display:none}
+    .mypage .left-menu > ul li:nth-child(4){display:none}
+    .mypage .left-menu > ul li:nth-child(5){display:none}
+
 }
