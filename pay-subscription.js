@@ -25,7 +25,7 @@ var pay_subscription = function() {
     var email = form.find('input[type="email"]').val();
     var name = form.find('#join_name').val();
     var phone = form.find('#join_callnum').val();
-    var address = form.find('#join_addr').val();
+    var address = form.find('#join_addr').val() + ' ' + form.find('#join_addr_detail').val();
     var idx = form.find('input[name="idx"]').val();
     // console.log(email);
     // console.log(name);
