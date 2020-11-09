@@ -39,7 +39,7 @@ writer: css3studio
 .footer-section .custom-text-info .logo{position:absolute;right:0;top:30%}
 .footer-section .custom-text-info .logo img{width:99px}
 .footer-section .foot-foot-nav{text-align:left}
-.footer-section .nav.nav-stacked.footer-all-nav li a{padding-left:0;margin-right:10px}
+.footer-section .nav.nav-stacked.footer-all-nav li a{padding-left:0;margin-right:10px;font-family:'Malgun Gothic','Nanum Gothic', 'Noto Sans','sans-serif';}
 
 /*슬라이더*/
 .doz_sys .paging_type_dot .owl-dots .owl-dot span{
