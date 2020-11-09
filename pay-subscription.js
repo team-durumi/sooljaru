@@ -25,12 +25,16 @@ var pay_subscription = function() {
     var email = form.find('input[type="email"]').val();
     var name = form.find('#join_name').val();
     var phone = form.find('#join_callnum').val();
-    var address = form.find('#join_addr').val() + ' ' + form.find('#join_addr_detail').val();
+    var address = form.find('#join_addr').val();
+    var address_detail = form.find('#join_addr_detail').val();
+    var postal_code = form.find('#join_addr_postcode').val();
     var idx = form.find('input[name="idx"]').val();
     // console.log(email);
     // console.log(name);
     // console.log(phone);
     // console.log(address);
+    // console.log(address_detail);
+    // console.log(postal_code);
     // console.log(idx);
 
     var idx_check_endpoint = endpoint_hostname + "/api/subscription_infos/check_idx";
@@ -86,6 +90,8 @@ var pay_subscription = function() {
               "name": name,
               "email": email,
               "address": address,
+              "address_detail": address_detail,
+              "postal_code": postal_code,
               "phone": phone,
               "order_id": order_id,
               "billing_key": billing_key,
