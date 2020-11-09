@@ -267,7 +267,7 @@ writer: css3studio
     .pc_section #padding_w2020102803c4f6a119bdf{height:25px !important}
 
     #text_w20201028a67f529a43e0b .text-table p br{display:none}
-    #text_w20201028a67f529a43e0b .text-table p{word-break:normal}
+    #text_w20201028a67f529a43e0b .text-table p{word-break:normal;display:inline}
 
     /*구독페이지>SOMMELIER’S NOTE*/
     #text_w202011053a4a7b0186325{
@@ -285,7 +285,7 @@ writer: css3studio
     .pc_section #padding_w202010289cfabcc8c54b4{height:60px !important}
     
     #s20201105f81e119f8804d .text-table p br{display:none}
-    #s20201105f81e119f8804d .text-table p{word-break:normal}
+    #s20201105f81e119f8804d .text-table p{word-break:normal;display:inline}
     
     /*11월 SOOLJARU*/
     #w2020110295da71f84c635 ._img_box{margin:0 -30px;height:auto !important}
