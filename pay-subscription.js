@@ -1,15 +1,28 @@
 $('a.btn_7fa1e8474f5e9').on('click', function(e) {
   e.preventDefault();
-  pay_subscription();
+  pay_subscription('subscription', 1);
 });
 
-$('#w202010307ecd272f04c20 .cf01 label[for="sub_box01_01"]').on('click', function(e) {
+$('.subscription_for_1').on('click', function(e) {
   e.preventDefault();
-  pay_subscription();
+  pay_subscription('subscription', 1);
 });
 
-var pay_subscription = function() {
+$('.subscription_for_2').on('click', function(e) {
+  e.preventDefault();
+  pay_subscription('subscription', 2);
+});
+
+$('.pay_once').on('click', function(e) {
+  e.preventDefault();
+  pay_subscription('one_time', 1);
+});
+
+var pay_subscription = function( purchase_type, box_count ) {
   // console.log('bootpay clicked');
+  // console.log(purchase_type);
+  // console.log(box_count);
+  // var box_count = box_count;
   var endpoint_hostname = "//api.sooljaru.com";
   var current_date = Date.now();
   var order_id = 'sooljaru_' + current_date;
@@ -61,7 +74,9 @@ var pay_subscription = function() {
               username: name,
               email: email,
               addr: address,
-              phone: phone
+              phone: phone,
+              box_count: box_count,
+              purchase_type: purchase_type
             },
             order_id: order_id, //고유 주문번호로, 생성하신 값을 보내주셔야 합니다.
             params: {callback1: '그대로 콜백받을 변수 1', callback2: '그대로 콜백받을 변수 2', order_id: order_id },
@@ -100,7 +115,10 @@ var pay_subscription = function() {
                 "billing_key": billing_key,
                 "bootpay_c_at": c_at,
                 "bootpay_e_at": e_at,
-                "imweb_idx": idx
+                "imweb_idx": idx,
+                "box_count": box_count,
+                "purchase_type": purchase_type
+
               }
             }
             // console.log(post_data);
@@ -108,7 +126,9 @@ var pay_subscription = function() {
               // console.log(data);
               if (data.is_success === true) {
                 console.log('빌링키 저장 성공');
-                alert('구독결제를 위한 카드정보가 저장되었습니다.');
+                // console.log(data);
+                // console.log(data.data.purchase_type_ko);
+                alert('구독결제를 위한 카드정보가 저장되었습니다. (' + data.data.info.box_count + '박스 ' + data.data.purchase_type_ko + ')');
                 // console.log(data);
               } else {
                 // console.log('빌링키 저장 실패');
